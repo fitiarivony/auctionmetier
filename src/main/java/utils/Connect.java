@@ -100,13 +100,13 @@ public final class Connect {
 //             Class.forName("org.postgresql.Driver");
         	// String url="jdbc:postgresql://postgres:lAjY5cvJinbwMrZZJbim@containers-us-west-185.railway.app:5574/railway";
         	  //return DriverManager.getConnection(url,"ijwqupmw","Akt9J-YuWSdpgLDbrtR7pTr-OIQ5gA4D");
-               this.setConnect(DriverManager.getConnection("jdbc:postgresql://localhost:8089/enchere" ,"postgres","ROOT" ));
+              // this.setConnect(DriverManager.getConnection("jdbc:postgresql://localhost:8089/enchere" ,"postgres","ROOT" ));
         	//  this.setConnect(DriverManager.getConnection(url ));
                   String jdbcUrl = "jdbc:postgresql://containers-us-west-177.railway.app:5983/railway";
 String username = "postgres";
 String password = "xrv29L42F1DkJKlek1FD";
 
-//this.setConnect(DriverManager.getConnection(jdbcUrl, username, password));
+this.setConnect(DriverManager.getConnection(jdbcUrl, username, password));
 
 
          }
