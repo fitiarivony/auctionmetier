@@ -15,8 +15,8 @@ import com.mongodb.client.MongoDatabase;
  */
 public class MongoConnect {
     public MongoDatabase getConnexionMongodb() throws Exception {
-        //String url = "mongodb://mongo:c20AUdZgBjj7AkSKNcaz@containers-us-west-190.railway.app:7394";
-        String url = "mongodb+srv://operateur:op123456@operateurclusteur.gada3.mongodb.net/operateurcluster?retryWrites=true&w=majority";
+        String url = "mongodb://mongo:EdhQHKll2EMs6KoMnx40@containers-us-west-44.railway.app:6711";
+     //   String url = "mongodb+srv://operateur:op123456@operateurclusteur.gada3.mongodb.net/operateurcluster?retryWrites=true&w=majority";
         MongoClient mongo = null;
         MongoDatabase database = null;
         try {
