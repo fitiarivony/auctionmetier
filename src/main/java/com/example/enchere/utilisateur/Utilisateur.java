@@ -146,6 +146,7 @@ public class Utilisateur extends BddObject{
             pStatement = connection.prepareStatement(sql);
             pStatement.setString(1, this.getIdutilisateur());
             int ta=pStatement.executeUpdate();
+            
             if(ta==0){throw new Exception();}
         }catch (Exception e){
             throw e;

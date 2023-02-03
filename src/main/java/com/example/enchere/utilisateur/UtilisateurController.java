@@ -146,8 +146,9 @@ public class UtilisateurController {
 
             // send notification of toStringEnchereLastDeconnect
             String bodynotif=util.toStringListDetail_enchere(retour);
-            HandleNotif.sendNotification(bodynotif,idutilisateur);
-
+            if(!bodynotif.isEmpty()){
+                HandleNotif.sendNotification(bodynotif,idutilisateur);
+            }
             // call updateEtatEnchereLastDeconnect
             util.updateEtatEnchereLastDeconnect(conn);
 
@@ -182,8 +183,9 @@ public class UtilisateurController {
 
             // send notification of toStringEnchereLastDeconnect
             String bodynotif=util.toStringListDetail_enchere(retour);
-            HandleNotif.sendNotification(bodynotif,idutilisateur);
-
+            if(!bodynotif.isEmpty()){
+                HandleNotif.sendNotification(bodynotif,idutilisateur);
+            }
             // call updateEtatEnchereLastDeconnect
             util.updateEtatEnchereOverClient(conn);
           
