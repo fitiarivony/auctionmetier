@@ -140,7 +140,7 @@ public class Utilisateur extends BddObject{
         Connect connection = new Connect();
         connection.getConnection();
         PreparedStatement pStatement = null;
-        String sql = "update utilisateur set token='' where idutilisateur=?";
+        String sql = "update utilisateur set token='',datedeconnect=current_timestamp where idutilisateur=? ";
 
         try{
             pStatement = connection.prepareStatement(sql);
